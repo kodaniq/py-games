@@ -53,7 +53,11 @@ If `py` is not recognized, try:
 python --version
 ```
 
-If neither command works, install Python from the official Python website and make sure Python is added to PATH during installation.
+If neither command works, download and install Python from the official website:
+
+👉 **https://www.python.org/downloads/**
+
+During installation on Windows, make sure to enable **Add Python to PATH** if that option is shown. After installation, close and reopen PowerShell, then run `py --version` or `python --version` again.
 
 ---
 
@@ -273,7 +277,11 @@ If that works, use `python` instead:
 python flappy_bird.py
 ```
 
-If neither `py` nor `python` works, Python is probably not installed correctly or is not available in PATH.
+If neither `py` nor `python` works, install Python from:
+
+👉 **https://www.python.org/downloads/**
+
+Then reopen PowerShell and test again.
 
 ---
 
