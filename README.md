@@ -4,12 +4,27 @@
 ![Pygame](https://img.shields.io/badge/Pygame-powered-green)
 ![Windows 11](https://img.shields.io/badge/Windows%2011-tested-success?logo=windows11)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 A collection of standalone desktop games written in **Python**. Most use **Pygame**; **Do Not Press** uses Python's built-in **Tkinter** GUI.
 
 Each game is a single `.py` file with no external image/audio assets required. Download the repository, install the dependency, and run whichever game you want.
 
 > ✅ **Tested on Windows 11**
+
+---
+
+# 🚦 Project status
+
+**Active and playable.** The games are available to play now, while bug fixes, polish and improvements are welcome.
+
+This repository is a good fit if you want to:
+
+- 🎮 play small Python desktop games
+- 🐍 explore Python and Pygame source code
+- 🧠 learn from self-contained game projects
+- 🛠️ modify games and experiment with your own ideas
+- 🤝 contribute fixes or improvements
 
 ---
 
@@ -23,6 +38,7 @@ The image above shows all seven games currently included in the repository: **Ca
 
 ## 📑 Table of contents
 
+- [Project status](#-project-status)
 - [Screenshots](#-screenshots)
 - [Games](#-games)
 - [Quick start](#-quick-start)
@@ -37,10 +53,13 @@ The image above shows all seven games currently included in the repository: **Ca
 - [Troubleshooting](#️-troubleshooting)
 - [Updating your copy](#-updating-your-copy)
 - [FAQ](#-faq)
+- [Roadmap](#-roadmap)
+- [Testing changes](#-testing-changes)
 - [Contributing](#-contributing)
 - [Feature requests](#-feature-requests)
 - [License](#-license)
 - [Bug reports & contact](#-bug-reports--contact)
+- [Support the project](#-support-the-project)
 
 ---
 
@@ -109,11 +128,7 @@ Open PowerShell and run:
 py --version
 ```
 
-Expected output looks similar to:
-
-```text
-Python 3.x.x
-```
+Expected output looks similar to `Python 3.x.x`.
 
 If `py` is not recognized, also try:
 
@@ -127,9 +142,7 @@ Download Python from the official website:
 
 👉 **https://www.python.org/downloads/**
 
-On Windows, enable **Add Python to PATH** if the installer shows that option.
-
-After installation, close and reopen PowerShell, then run `py --version` again.
+On Windows, enable **Add Python to PATH** if the installer shows that option. After installation, close and reopen PowerShell, then run `py --version` again.
 
 ## 3. Check pip
 
@@ -171,8 +184,6 @@ cd py-games
 ---
 
 # 📚 Installing dependencies
-
-Install everything listed in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -358,7 +369,7 @@ Several games create local JSON save files automatically.
 
 These can contain high scores, coins, unlocks, settings, achievements and progression. They are ignored by Git so personal progress is not accidentally uploaded.
 
-⚠️ Deleting a save file can reset that game's progress.
+> ⚠️ **Back up your save files before replacing or reinstalling the repository if you want to keep your progress.** Deleting a save file can reset that game's progress.
 
 ---
 
@@ -410,19 +421,13 @@ py-games/
 py -m pip install pygame
 ```
 
-Then verify:
-
-```powershell
-py -m pip show pygame
-```
+Then verify with `py -m pip show pygame`.
 
 ## `py` is not recognized
 
 Try `python --version`. If that works, replace `py` with `python` in the commands.
 
-If neither command works, install Python from:
-
-👉 **https://www.python.org/downloads/**
+If neither command works, install Python from the official Python website.
 
 ## PowerShell cannot find the `.py` file
 
@@ -468,7 +473,7 @@ git pull
 
 If you downloaded a ZIP, download a fresh ZIP for the newest version.
 
-Keep a backup of your local save JSON files if you want to preserve progress while replacing folders manually.
+**Before replacing the old folder, back up any save JSON files you want to keep.**
 
 ---
 
@@ -491,6 +496,37 @@ In the local JSON save files listed above.
 
 ### Are Linux and macOS supported?
 They may work, but the repository is currently **tested on Windows 11**. Linux/macOS are not officially tested yet.
+
+---
+
+# 🗺️ Roadmap
+
+Possible future improvements include:
+
+- 🐛 bug fixes and gameplay polish
+- ⚡ performance and code-quality improvements
+- 🎮 improvements to existing games and additional modes
+- 🆕 more standalone Python games
+- 🐧 Linux testing
+- 🍎 macOS testing
+- 📚 documentation improvements
+
+The roadmap is intentionally flexible; ideas and contributions are welcome.
+
+---
+
+# 🧪 Testing changes
+
+Before submitting a game change, please check that:
+
+- the game starts without a Python traceback
+- menus and basic controls still work
+- a normal play session can be started
+- save/load still works if the game uses a JSON save file
+- restarting and returning to menus do not crash
+- any new dependency is added to `requirements.txt`
+
+For debugging, launch the game from PowerShell so errors remain visible after a crash.
 
 ---
 
@@ -540,9 +576,7 @@ This project is licensed under the **MIT License**. See the [`LICENSE`](LICENSE)
 
 Found a bug, crash, broken feature or something that behaves strangely?
 
-You can report it through **GitHub Issues** or contact:
-
-📧 **kodaniq@outlook.com**
+You can report it through **GitHub Issues** or email **[kodaniq@outlook.com](mailto:kodaniq@outlook.com)**.
 
 If possible, include:
 
@@ -555,10 +589,22 @@ If possible, include:
 
 Please do **not** include passwords, API keys, tokens or other private information in bug reports.
 
-Feedback, bug reports and improvement ideas are appreciated. ❤️
+---
+
+# ⭐ Support the project
+
+If you enjoy the games or find the source code useful, you can support the project by:
+
+- ⭐ starring the repository
+- 🐛 reporting bugs
+- 💡 suggesting improvements
+- 🤝 contributing fixes or features
+- 🎮 sharing the games with someone who might enjoy them
+
+Every bit of feedback helps improve the collection. ❤️
 
 ---
 
 ## ⭐ Have fun
 
-Pick a game, launch it and try to beat your score. If you enjoy the project, feel free to ⭐ the repository.
+Pick a game, launch it and try to beat your score. 🎮🔥
