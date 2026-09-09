@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*_save.json
+highscore.json
+racing_save.json
+aimtrainer_save.json
+do_not_press_save.json
