@@ -1,5 +1,10 @@
 # 🎮 Python Games
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![Pygame](https://img.shields.io/badge/Pygame-powered-green)
+![Windows 11](https://img.shields.io/badge/Windows%2011-tested-success?logo=windows11)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 A collection of standalone desktop games written in **Python**. Most use **Pygame**; **Do Not Press** uses Python's built-in **Tkinter** GUI.
 
 Each game is a single `.py` file with no external image/audio assets required. Download the repository, install the dependency, and run whichever game you want.
@@ -18,9 +23,11 @@ The image above shows all seven games currently included in the repository: **Ca
 
 ## 📑 Table of contents
 
+- [Screenshots](#-screenshots)
 - [Games](#-games)
 - [Quick start](#-quick-start)
 - [Requirements](#-requirements)
+- [Compatibility](#-compatibility)
 - [Installing Python](#-installing-python)
 - [Downloading the repository](#-downloading-the-repository)
 - [Installing dependencies](#-installing-dependencies)
@@ -30,6 +37,8 @@ The image above shows all seven games currently included in the repository: **Ca
 - [Troubleshooting](#️-troubleshooting)
 - [Updating your copy](#-updating-your-copy)
 - [FAQ](#-faq)
+- [Contributing](#-contributing)
+- [Feature requests](#-feature-requests)
 - [License](#-license)
 - [Bug reports & contact](#-bug-reports--contact)
 
@@ -68,8 +77,6 @@ If you do not have Git, use **Code → Download ZIP** on GitHub instead.
 
 # ✅ Requirements
 
-Recommended setup:
-
 - **Windows 11** — tested
 - **Python 3**
 - **pip** — normally included with Python
@@ -77,7 +84,18 @@ Recommended setup:
 
 `donotpress.py` uses **Tkinter**, which is normally included with the standard Windows Python installation and does not require Pygame to run.
 
-Linux and macOS may also work because most of the code is cross-platform, but this repository is currently only confirmed/tested on **Windows 11**.
+---
+
+# 🪟 Compatibility
+
+| Platform | Status |
+|---|---|
+| **Windows 11** | ✅ Tested |
+| Windows 10 | ⚪ Not officially tested |
+| Linux | ⚪ Not officially tested |
+| macOS | ⚪ Not officially tested |
+
+Most of the Pygame code is cross-platform, so other operating systems may work, but **Windows 11 is currently the confirmed test platform**.
 
 ---
 
@@ -111,11 +129,7 @@ Download Python from the official website:
 
 On Windows, enable **Add Python to PATH** if the installer shows that option.
 
-After installation:
-
-1. Close PowerShell.
-2. Open PowerShell again.
-3. Run `py --version` or `python --version`.
+After installation, close and reopen PowerShell, then run `py --version` again.
 
 ## 3. Check pip
 
@@ -137,12 +151,7 @@ If this prints a pip version and Python path, you're ready.
 4. Extract the ZIP.
 5. Open the extracted folder.
 
-To open PowerShell directly inside that folder:
-
-1. Open the folder in File Explorer.
-2. Click the address bar.
-3. Type `powershell`.
-4. Press **Enter**.
+To open PowerShell directly inside that folder, open the folder in File Explorer, click the address bar, type `powershell`, and press **Enter**.
 
 Check that you are in the right place with:
 
@@ -169,11 +178,7 @@ Install everything listed in `requirements.txt`:
 py -m pip install -r requirements.txt
 ```
 
-Currently this installs:
-
-```text
-pygame
-```
+Currently this installs `pygame`.
 
 You can also install Pygame directly:
 
@@ -207,8 +212,6 @@ If a version number appears, Pygame is working. ✅
 
 ## 🎯 Aim Trainer — `aim_trainer.py`
 
-Run:
-
 ```powershell
 py aim_trainer.py
 ```
@@ -222,8 +225,6 @@ py aim_trainer.py
 ---
 
 ## 🏎️ Car Game — `car_game.py`
-
-Run:
 
 ```powershell
 py car_game.py
@@ -249,8 +250,6 @@ py car_game.py
 
 ## 🧱 Breakout — `Breakout.py`
 
-Run:
-
 ```powershell
 py Breakout.py
 ```
@@ -264,8 +263,6 @@ py Breakout.py
 ---
 
 ## 🚦 Crossy Road — `crossy_road.py`
-
-Run:
 
 ```powershell
 py crossy_road.py
@@ -287,8 +284,6 @@ py crossy_road.py
 
 ## 🔴 Do Not Press — `donotpress.py`
 
-Run:
-
 ```powershell
 py donotpress.py
 ```
@@ -304,8 +299,6 @@ This game uses **Tkinter**, not Pygame.
 ---
 
 ## 🦖 Dino Hop — `dyno_hop.py`
-
-Run:
 
 ```powershell
 py dyno_hop.py
@@ -326,8 +319,6 @@ py dyno_hop.py
 ---
 
 ## 🐦 Flappy Bird — `flappy_bird.py`
-
-Run:
 
 ```powershell
 py flappy_bird.py
@@ -427,13 +418,7 @@ py -m pip show pygame
 
 ## `py` is not recognized
 
-Try:
-
-```powershell
-python --version
-```
-
-If that works, replace `py` with `python` in the commands.
+Try `python --version`. If that works, replace `py` with `python` in the commands.
 
 If neither command works, install Python from:
 
@@ -509,6 +494,28 @@ They may work, but the repository is currently **tested on Windows 11**. Linux/m
 
 ---
 
+# 🤝 Contributing
+
+Contributions are welcome. If you want to fix a bug, improve a game or clean up code:
+
+1. Fork the repository.
+2. Create a new branch for your change.
+3. Make and test your changes.
+4. Keep unrelated changes out of the same commit when possible.
+5. Open a Pull Request and explain what you changed.
+
+Please test game changes before submitting them. If a change adds a new dependency, also update `requirements.txt`.
+
+---
+
+# 💡 Feature requests
+
+Ideas for new features, game modes, quality-of-life improvements or new games are welcome.
+
+When suggesting something, include **which game** the idea is for, **what you would like added**, and a short explanation of **how it should work**. GitHub Issues are a good place for public suggestions.
+
+---
+
 # 🧑‍💻 For developers
 
 Clone and set up:
@@ -533,7 +540,7 @@ This project is licensed under the **MIT License**. See the [`LICENSE`](LICENSE)
 
 Found a bug, crash, broken feature or something that behaves strangely?
 
-Please send a description of the problem to:
+You can report it through **GitHub Issues** or contact:
 
 📧 **kodaniq@outlook.com**
 
@@ -541,14 +548,17 @@ If possible, include:
 
 - which game you were playing
 - what you were doing when the bug happened
-- the error/traceback from PowerShell, if there is one
-- your Python/Pygame version
 - steps that make the bug happen again
+- the error/traceback from PowerShell, if there is one
+- your Windows version
+- your Python and Pygame versions
 
-Feedback and bug reports are appreciated. ❤️
+Please do **not** include passwords, API keys, tokens or other private information in bug reports.
+
+Feedback, bug reports and improvement ideas are appreciated. ❤️
 
 ---
 
 ## ⭐ Have fun
 
-Pick a game, launch it and try to beat your score. 🎮🔥
+Pick a game, launch it and try to beat your score. If you enjoy the project, feel free to ⭐ the repository.
